@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -19,6 +20,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Undo
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Edit
@@ -77,7 +79,8 @@ internal fun FlightsScreen(
         val db = airportDb
         filterFlights(all, showHidden, selectedYear, query, placeText = { code -> db?.byIata(code)?.let { "${it.city} ${it.name}" }.orEmpty() })
     }
-    LazyColumn(contentPadding = PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+    androidx.compose.foundation.layout.Box(Modifier.fillMaxSize()) {
+    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(start = 16.dp, top = 16.dp, end = 16.dp, bottom = 88.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
         item {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 SectionLabel("Flights", "${all.size - hiddenCount}")
@@ -175,6 +178,15 @@ internal fun FlightsScreen(
                 }
             }
         }
+    }
+    androidx.compose.material3.ExtendedFloatingActionButton(
+        onClick = onAdd,
+        icon = { Icon(Icons.Default.Add, null) },
+        text = { Text("Add flight") },
+        containerColor = MaterialTheme.colorScheme.onSurface,
+        contentColor = MaterialTheme.colorScheme.surface,
+        modifier = Modifier.align(Alignment.BottomEnd).padding(16.dp),
+    )
     }
 }
 

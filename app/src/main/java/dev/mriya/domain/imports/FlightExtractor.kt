@@ -193,7 +193,8 @@ internal object TextFlights {
         "USD", "EUR", "GBP", "UTC", "GMT", "VIA", "NON", "REF", "PNR", "ETA", "ETD", "TBA", "FAQ", "URL", "APP", "WEB", "COM", "ORG", "NET",
     )
     private val airportTok = Regex("""\b[A-Z]{3}\b""")
-    private val designator = Regex("""\b([A-Z]{2}|[A-Z]\d|\d[A-Z])\s?(\d{2,4})\b""")
+    // One-digit numbers (QF1, BA9) count only when written tight to a two-letter airline code, so stray "AB 1" in prose is ignored.
+    private val designator = Regex("""\b([A-Z]{2}|[A-Z]\d|\d[A-Z])\s?(\d{2,4}|(?<=[A-Z]{2})\d)\b""")
     /** "8:30", "8:30 AM", "8:30pm" and "8:30 a.m." (travel portals write the dotted form). */
     private val timeRe = Regex("""\b(\d{1,2}):(\d{2})(?:\s?([AaPp])\.?[Mm]\b\.?)?""")
     private val dateRes = listOf(
