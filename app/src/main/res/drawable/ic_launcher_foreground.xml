@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Climbing contrail arc -->
+    <path
+        android:pathData="M18.0,75.0 Q31.5,64.0 43.0,56.9"
+        android:strokeLineCap="round"
+        android:strokeWidth="2.6">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:endX="43.0"
+                android:endY="56.9"
+                android:startX="18.0"
+                android:startY="75.0"
+                android:type="linear">
+                <item android:color="#00FFFFFF" android:offset="0.0" />
+                <item android:color="#E0FFFFFF" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Bold Antonov An-225 Mriya silhouette (6 engines + high swept wings + twin H-tail) -->
+    <group
+        android:rotation="-30"
+        android:scaleX="2.35"
+        android:scaleY="2.35"
+        android:translateX="57.5"
+        android:translateY="48.5">
+        <!-- Long heavy cargo fuselage + wide swept wings + horizontal stabilizer -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M7.8,0 C7.8,-0.75 6.4,-1.05 4.8,-1.05 L2.4,-1.05 L-2.6,-8.0 L-3.8,-7.6 L-1.0,-1.05 L-5.2,-0.85 L-6.8,-3.85 L-7.7,-3.65 L-6.8,-0.6 L-7.4,0 L-6.8,0.6 L-7.7,3.65 L-6.8,3.85 L-5.2,0.85 L-1.0,1.05 L-3.8,7.6 L-2.6,8.0 L2.4,1.05 L4.8,1.05 C6.4,1.05 7.8,0.75 7.8,0 Z" />
+
+        <!-- 6 underwing engine pods (3 per wing) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M2.6,-2.5 C2.6,-2.9 2.2,-3.05 1.4,-3.05 C0.6,-3.05 0.2,-2.9 0.2,-2.5 C0.2,-2.1 0.6,-1.95 1.4,-1.95 C2.2,-1.95 2.6,-2.1 2.6,-2.5 Z M1.3,-4.4 C1.3,-4.8 0.9,-4.95 0.1,-4.95 C-0.7,-4.95 -1.1,-4.8 -1.1,-4.4 C-1.1,-4.0 -0.7,-3.85 0.1,-3.85 C0.9,-3.85 1.3,-4.0 1.3,-4.4 Z M0.0,-6.3 C0.0,-6.7 -0.4,-6.85 -1.2,-6.85 C-2.0,-6.85 -2.4,-6.7 -2.4,-6.3 C-2.4,-5.9 -2.0,-5.75 -1.2,-5.75 C-0.4,-5.75 0.0,-5.9 0.0,-6.3 Z M2.6,2.5 C2.6,2.1 2.2,1.95 1.4,1.95 C0.6,1.95 0.2,2.1 0.2,2.5 C0.2,2.9 0.6,3.05 1.4,3.05 C2.2,3.05 2.6,2.9 2.6,2.5 Z M1.3,4.4 C1.3,4.0 0.9,3.85 0.1,3.85 C-0.7,3.85 -1.1,4.0 -1.1,4.4 C-1.1,4.8 -0.7,4.95 0.1,4.95 C0.9,4.95 1.3,4.8 1.3,4.4 Z M0.0,6.3 C0.0,5.9 -0.4,5.75 -1.2,5.75 C-2.0,5.75 -2.4,5.9 -2.4,6.3 C-2.4,6.7 -2.0,6.85 -1.2,6.85 C-0.4,6.85 0.0,6.7 0.0,6.3 Z" />
+
+        <!-- Iconic An-225 twin vertical tailfins (H-tail endplates) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M-5.2,-3.4 L-8.3,-3.4 L-8.5,-4.35 L-5.6,-4.35 Z M-5.2,3.4 L-5.6,4.35 L-8.5,4.35 L-8.3,3.4 Z" />
+    </group>
+</vector>

@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Simplified top-down An-225 silhouette: swept wings, six underwing engines, twin vertical tails. -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,2.2c0.65,0 1.05,0.6 1.05,1.45v5.1l8.45,4.15c0.32,0.16 0.5,0.48 0.5,0.84v0.85c0,0.28 -0.26,0.48 -0.53,0.4L13.05,12.5v4.3l3.9,2.2c0.22,0.12 0.35,0.35 0.35,0.6v0.95c0,0.24 -0.22,0.42 -0.46,0.36L12,19.45l-4.84,1.46c-0.24,0.06 -0.46,-0.12 -0.46,-0.36V19.6c0,-0.25 0.13,-0.48 0.35,-0.6l3.9,-2.2v-4.3l-8.42,2.49c-0.27,0.08 -0.53,-0.12 -0.53,-0.4v-0.85c0,-0.36 0.18,-0.68 0.5,-0.84l8.45,-4.15v-5.1C10.95,2.8 11.35,2.2 12,2.2z" />
+</vector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mriya</string>
+    <string name="tab_passport">Паспорт</string>
+    <string name="tab_map">Мапа</string>
+    <string name="tab_flights">Рейси</string>
+    <string name="tab_trophies">Трофеї</string>
+    <string name="tab_stats">Статистика</string>
+    <string name="tab_settings">Налаштування</string>
+</resources>
