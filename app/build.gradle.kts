@@ -29,8 +29,8 @@ android {
         applicationId = "dev.mriya"
         minSdk = 26
         targetSdk = 36
-        versionCode = 5
-        versionName = "0.4.0"
+        versionCode = 6
+        versionName = "0.4.1"
         buildConfigField("String", "GMAIL_CLIENT_ID", "\"$gmailClientId\"")
         manifestPlaceholders["gmailRedirectScheme"] =
             if (gmailClientId.isBlank()) "dev.mriya.gmail.unconfigured" else "com.googleusercontent.apps." + gmailClientId.removeSuffix(".apps.googleusercontent.com")

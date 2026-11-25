@@ -83,4 +83,4 @@ Airports: [OurAirports](https://ourairports.com/data/) (public domain). Country 
 
 ## 📄 Status
 
-Active development (`v0.4.0`). Licensed under the [GNU GPL v3](LICENSE).
+Active development (`v0.4.1`). Licensed under the [GNU GPL v3](LICENSE).
