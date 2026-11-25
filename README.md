@@ -19,6 +19,23 @@
 
 ---
 
+## 📱 App Preview
+
+<p align="center">
+  <img src="assets/screens/1-passport.png" width="32%" alt="Travel record page of the passport" />
+  <img src="assets/screens/2-globe.png" width="32%" alt="Offline 3D globe with flight arcs" />
+  <img src="assets/screens/3-trophies.png" width="32%" alt="Rank and trophies" />
+</p>
+<p align="center">
+  <img src="assets/screens/4-flights.png" width="32%" alt="Flights list with airline badges" />
+  <img src="assets/screens/5-stats.png" width="32%" alt="Stats and top airlines" />
+  <img src="assets/screens/6-import.png" width="32%" alt="Reviewing flights found in a calendar file" />
+</p>
+
+<p align="center"><sub>Screenshots use invented sample flights.</sub></p>
+
+---
+
 ## 📥 Download & Install
 
 | Where | How |
